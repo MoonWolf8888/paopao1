@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#fff4f6">
+    <meta name="description" content="A little place made to brighten your day.">
+
+    <title>A Little Something for You ♡</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="website">
+
+        <!-- SCENE 1: YES OR NO -->
+        <section id="welcome-scene" class="scene active">
+            <div class="welcome-card">
+                <p class="eyebrow">A LITTLE SURPRISE FOR YOU</p>
+
+                <div class="welcome-decoration" aria-hidden="true">
+                    ♡ ✿ ♡
+                </div>
+
+                <h1 id="opening-question">
+                    May I make your day a little better?
+                </h1>
+
+                <p class="welcome-description">
+                    I made something small, just for you.
+                </p>
+
+                <div class="button-group">
+                    <button id="yes-button" class="primary-button">
+                        Yes, please ♡
+                    </button>
+
+                    <button id="no-button" class="secondary-button">
+                        No, thank you
+                    </button>
+                </div>
+
+                <p id="no-response" class="response-message"
+                   aria-live="polite"></p>
+            </div>
+        </section>
+
+
+        <!-- SCENE 2: CINEMATIC PHOTO COLLAGE -->
+        <section id="collage-scene" class="scene">
+            <div class="collage-heading">
+                <p class="eyebrow">A COLLECTION OF LITTLE MOMENTS</p>
+
+                <h1 id="collage-title">For the memories ♡</h1>
+
+                <p id="collage-subtitle">
+                    Every little moment has a place here.
+                </p>
+            </div>
+
+            <div id="collage-container" class="collage-container">
+                <!-- Photos will be created using JavaScript. -->
+            </div>
+
+            <p class="collage-caption" id="collage-caption">
+                Some moments are worth keeping.
+            </p>
+
+            <button id="collage-continue" class="primary-button">
+                Continue ♡
+            </button>
+        </section>
+
+
+        <!-- SCENE 3: THE FOUR SEASONS -->
+        <section id="season-scene" class="scene season-spring">
+            <div id="season-scenery" class="season-scenery"
+                 aria-hidden="true">
+                <div class="sun"></div>
+                <div class="season-hills hill-back"></div>
+                <div class="season-hills hill-front"></div>
+                <div id="season-particles" class="season-particles"></div>
+            </div>
+
+            <div class="season-content">
+                <p class="eyebrow">A LITTLE WORLD OF YOUR OWN</p>
+
+                <h1 id="season-title">A little spring day</h1>
+
+                <p id="season-description">
+                    A fresh beginning, filled with little things that bloom.
+                </p>
+
+                <button id="season-continue" class="primary-button">
+                    There's more ♡
+                </button>
+            </div>
+
+            <div class="season-settings">
+                <label for="season-selector">Choose your season</label>
+
+                <select id="season-selector">
+                    <option value="spring">Spring 🌸</option>
+                    <option value="summer">Summer ☀️</option>
+                    <option value="autumn">Autumn 🍂</option>
+                    <option value="winter">Winter ❄️</option>
+                </select>
+            </div>
+        </section>
+
+
+        <!-- SCENE 4: YOUR ENCOURAGEMENT MESSAGE -->
+        <section id="encouragement-scene" class="scene season-spring">
+            <div id="message-scenery" class="message-scenery"
+                 aria-hidden="true">
+                <div class="message-sun"></div>
+                <div class="message-landscape"></div>
+                <div id="message-particles" class="season-particles"></div>
+            </div>
+
+            <div class="encouragement-content">
+                <div class="character-container">
+                    <img
+                        id="pochacco-image"
+                        src="images/pochacco.png"
+                        alt="Pochacco, here to cheer you on"
+                    >
+                </div>
+
+                <p class="eyebrow">A LITTLE REMINDER FOR YOU</p>
+
+                <h1 id="encouragement-title">
+                    You are doing better than you think.
+                </h1>
+
+                <p id="encouragement-message">
+                    Whatever today brings, remember that you don't have to
+                    have everything figured out. Take things one step at a
+                    time. Even the smallest steps count, and you deserve to
+                    be proud of how far you've come.
+                </p>
+
+                <p class="message-signature" id="message-signature">
+                    Made with love, just for you ♡
+                </p>
+
+                <button id="replay-button" class="primary-button">
+                    Experience it again ↻
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Configuration loads before the website behavior. -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
